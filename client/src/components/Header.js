@@ -19,7 +19,7 @@ const Header = () => {
       <Navbar bg='light'  expand='lg' >
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>DropShop</Navbar.Brand>
+            <Navbar.Brand>DroShop</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
