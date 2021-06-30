@@ -10748,8 +10748,3 @@ textarea.form-control-lg {
 .pagination a:hover {
     text-decoration: none
 }
-
-.btn-outline-success {
-    color: red;
-    border-color: red;
-}
