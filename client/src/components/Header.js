@@ -16,10 +16,10 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg='light'  expand='lg' >
+      <Navbar bg='light'  expand='lg'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>DroShop</Navbar.Brand>
+            <Navbar.Brand>DropShop</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

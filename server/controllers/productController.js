@@ -65,7 +65,6 @@ const createProduct = asyncHandler(async (req, res) => {
   await connectDB('product_schema')
     .returning('*')
     .insert(newProduct)
-
   res.status(201).json(newProduct)
 
 })
@@ -79,12 +78,6 @@ const updateProduct = asyncHandler(async (req, res) => {
     .from('product_schema')
     .where({ _id: req.params.id })
   if (product[0]) {
-    // product[0].name= name,
-    // product[0].price= price,
-    // product[0].image= image,
-    // product[0].brand= brand,
-    // product[0].category= category,
-    // product[0].description= description
     await connectDB('product_schema')
       .where('_id', req.params.id)
       .update({
@@ -95,7 +88,12 @@ const updateProduct = asyncHandler(async (req, res) => {
         category: req.body.category,
         description: req.body.description
       })
-    res.json(updateProduct)
+      const updatedProduct = await connectDB
+      .select('*')
+      .from('product_schema')
+      .where({ _id: req.params.id })
+      console.log();
+    res.json(updatedProduct[0])
   } else {
     res.status(404)
     throw new Error('Product not found')

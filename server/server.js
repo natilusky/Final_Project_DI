@@ -6,6 +6,7 @@ import { notFound, errorHandler } from './middleware/errorMiddlware.js'
 import connectDB from './config/db.js'
 import productRoutes from './routes/productRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+import uploadRoutes from './routes/uploadRoutes.js'
 
 dotenv.config()
 const app = express()

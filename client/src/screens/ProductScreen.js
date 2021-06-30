@@ -59,9 +59,9 @@ const ProductScreen = ({ match }) => {
                 <Button
                   className='btn-block'
                   type='button'
-                  disabled={product.countInStock === 0}
+                  href={product.url}
                 >
-                  Add To Cart
+                  Buy now
                 </Button>
               </ListGroup.Item>
             </ListGroup>

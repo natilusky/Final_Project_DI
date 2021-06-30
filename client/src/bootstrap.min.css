@@ -289,6 +289,7 @@ th {
 }
 
 tbody, td, tfoot, th, thead, tr {
+    text-align: center;
     border-color: inherit;
     border-style: solid;
     border-width: 0
@@ -2914,6 +2915,7 @@ textarea.form-control-lg {
 
 .btn-primary {
     color: #fff;
+    margin-top: 0.5rem;
     background-color: #eb6864;
     border-color: #eb6864
 }
@@ -3088,9 +3090,10 @@ textarea.form-control-lg {
 }
 
 .btn-danger {
+    margin-left: 0.7rem;
     color: #fff;
-    background-color: #f57a00;
-    border-color: #f57a00
+    background-color: #d9534f;
+    border-color: #d9534f;
 }
 
 .btn-danger:hover {
@@ -3123,6 +3126,8 @@ textarea.form-control-lg {
 }
 
 .btn-light {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
     color: #000;
     background-color: #f8f9fa;
     border-color: #f8f9fa
@@ -5058,6 +5063,7 @@ textarea.form-control-lg {
     display: block;
     padding: .5rem 1rem;
     color: #222;
+    text-align: center;
     text-decoration: none;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .125)
