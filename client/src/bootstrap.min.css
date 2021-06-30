@@ -3019,6 +3019,7 @@ textarea.form-control-lg {
     border-color: #22b24c
 }
 
+
 .btn-info {
     color: #fff;
     background-color: #369;
@@ -10746,4 +10747,9 @@ textarea.form-control-lg {
 
 .pagination a:hover {
     text-decoration: none
+}
+
+.btn-outline-success {
+    color: red;
+    border-color: red;
 }
