@@ -14,5 +14,4 @@ const connectDB = knex({
             ssl: { rejectUnauthorized: false }
         }
 })
-
   export default connectDB
